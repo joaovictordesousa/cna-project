@@ -1,0 +1,15 @@
+.titulo-jvs
+{
+  color: #0a58ca;
+  border: solid 1px dodgerblue;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+th, td {
+  text-align: center;
+}
+
+.primeiro_tabela {
+  text-align: left;
+}
