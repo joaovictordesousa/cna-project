@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Questionarios;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\User;
 
 class QuestionarioController extends Controller
 {
@@ -23,17 +24,15 @@ class QuestionarioController extends Controller
         return view('questionario');
     }
 
+    public function usuarios()
+    {
+        $AllUser = User::all();
+        return view('usuarios', ['AllUser'=>$AllUser]);
+    }
+
     public function ficha()
     {
         return view('ficha');
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-
     }
 
     /**
@@ -48,10 +47,10 @@ class QuestionarioController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Questionarios $id)
+    public function show($id)
     {
-        $questionario = Questionarios::find($id);
-        return view('ficha', compact('dashboard'));
+        $questionario = Questionarios::findOrFail($id);
+        return view('ficha', compact('questionario'));
     }
 
     /**

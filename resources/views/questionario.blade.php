@@ -186,10 +186,6 @@
 
                         <!-- Botões de Ação -->
                         <div class="d-flex justify-content-between align-items-center pt-4 border-top">
-                            <a href="{{ route('dashboard') }}" class="btn btn-outline-secondary btn-lg">
-                                <i class="fas fa-arrow-left me-2"></i>
-                                Voltar
-                            </a>
                             <button type="submit" class="btn btn-primary btn-lg px-5">
                                 <i class="fas fa-paper-plane me-2"></i>
                                 Enviar Questionário
