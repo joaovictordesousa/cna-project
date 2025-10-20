@@ -1,0 +1,27 @@
+    .card {
+        border-radius: 10px;
+    }
+
+    .avatar {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
+
+    .table-hover tbody tr:hover {
+        background-color: rgba(102, 126, 234, 0.05);
+    }
+
+    .table th {
+        border-top: none;
+        font-weight: 600;
+    }
+
+    @media (max-width: 768px) {
+        .card-body {
+            padding: 0 !important;
+        }
+    }
+
+    /* CSS DO CARD */
+
+
+    

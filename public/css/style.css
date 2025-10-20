@@ -1,3 +1,10 @@
+@import url('bootstrap.css');
+@import url('dashboard.css');
+@import url('ficha.css');
+@import url('style.css');
+@import url('welcome.css');
+@import url('usuarios.css');
+
 .titulo-jvs
 {
   color: #0a58ca;

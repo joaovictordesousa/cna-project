@@ -69,7 +69,7 @@
                                     @foreach ( $Allquestionarios as $questio)
                                     <tr>
                                         <td class="primeiro_tabela">{{ $questio->nome }}</td>
-                                        <td><a class="btn-custom btn-warning" href="#" role="button">Visualizar Ficha</a></td>
+                                        <td><a class="btn-custom btn-warning" href="{{ route('dashboard.show', $questio->id) }}" role="button">Visualizar Ficha</a></td>
                                         <td><a class="btn-custom btn-success" href="#" role="button">Concluir Atendimento</a></td>
                                     </tr>
                                     @endforeach

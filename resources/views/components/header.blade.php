@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
     <link rel="icon" href="{{ asset(path: 'img/logo jvs.png')}}">
-    <link rel="stylesheet" href="{{ asset('css/dashboard.css') }}">
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>JvS</title>
@@ -29,13 +27,13 @@
                     <span class="menu-text">Dashboard</span>
                 </a>
                 
-                <a href="#" class="menu-item {{ request()->routeIs('pacientes.*') ? 'active' : '' }}">
+                <a href="{{ route('dashboard.usuarios') }}" class="menu-item {{ request()->routeIs('dashboard.usuarios') ? 'active' : '' }}">
                     <i class="fas fa-user-injured"></i>
                     <span class="menu-text">Pacientes</span>
                 </a>
                 
                 
-                <a href="{{ route('dashboard.questionario') }}" class="menu-item {{ request()->routeIs('questionarios.*') ? 'active' : '' }}">
+                <a href="{{ route('dashboard.questionario') }}" class="menu-item {{ request()->routeIs('dashboard.questionario') ? 'active' : '' }}">
                     <i class="fas fa-file-medical"></i>
                     <span class="menu-text">Questionários</span>
                 </a>
@@ -74,7 +72,7 @@
                     <!-- Menu do Usuário (Breeze) -->
                     <div class="user-menu" id="userMenu">
                         <div class="user-avatar">
-                            {{ strtoupper(substr(Auth::user()->name, 0, 1)) }}
+                            {{ strtoupper(substr(Auth::user()->name, 0, 1)) }} <!-- Função para ficar a primeiro letra do nome -->
                         </div>
                         <span>{{ Auth::user()->name }}</span>
                         
