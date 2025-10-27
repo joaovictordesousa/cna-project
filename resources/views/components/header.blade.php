@@ -38,22 +38,7 @@
                     <span class="menu-text">Questionários</span>
                 </a>
                 
-                <div class="menu-divider"></div>
-                
-                <!-- Menu de Usuário (Breeze) -->
-                <a href="#" class="menu-item {{ request()->routeIs('profile.edit') ? 'active' : '' }}">
-                    <i class="fas fa-user"></i>
-                    <span class="menu-text">Perfil</span>
-                </a>
-                
-                <!-- Formulário de Logout (Breeze) -->
-                <form method="POST" action="{{ route('logout') }}" class="menu-item" style="padding: 0;">
-                    @csrf
-                    <button type="submit" style="background: none; border: none; color: inherit; width: 100%; text-align: left; padding: 12px 20px; display: flex; align-items: center; gap: 12px; cursor: pointer;">
-                        <i class="fas fa-sign-out-alt"></i>
-                        <span class="menu-text">Sair</span>
-                    </button>
-                </form>
+                <div class="menu-divider"></div> 
             </div>
         </div>
         
