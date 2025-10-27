@@ -3,7 +3,8 @@
 @section('title', 'JvS - Todos os Pacientes')
 @section('page-title', 'Gestão de Pacientes')
 
-    <div class="container-fluid py-4">
+
+<div class="container-fluid py-4">
         <div class="row justify-content-center">
             <div class="col-12 col-lg-8">
                 <div class="card shadow-sm border-0">
